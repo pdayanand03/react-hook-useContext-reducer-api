@@ -1,11 +1,17 @@
-
+import { createContext } from 'react';
 import './App.css';
+import ComponentC from './components/ComponentC';
+
+export const userContext = createContext();
 
 function App() {
   return (
-    <div className="App">
-      Hello World
-    </div>
+    <userContext.Provider value={{firstName:"Dayanand",lastName:"Patil"}}>
+      <div className="App">
+        <ComponentC/>
+      </div>
+    </userContext.Provider>
+    
   );
 }
 
