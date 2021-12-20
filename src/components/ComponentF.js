@@ -6,7 +6,7 @@ const ComponentF = () =>{
     return(
         <div>
             <div>ComponentF</div>
-            <div>{data.firstName+" "}{data.lastName}</div>
+            <div>{data.state.firstName+" "}{data.state.lastName}</div>
         </div>
     )
 }
