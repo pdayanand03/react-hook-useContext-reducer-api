@@ -2,6 +2,7 @@ import { createContext, useReducer } from 'react';
 import './App.css';
 import ComponentC from './components/ComponentC';
 import ParentComponent from './useCallBackHook/ParentComponent';
+import Counter from './useMemoHook/Counter';
 
 export const userContext = createContext();
 const initialState = {
@@ -25,7 +26,8 @@ function App() {
     <userContext.Provider value={{state, dispatch}}>
       <div className="App">
         {/* <ComponentC/> */}
-        <ParentComponent/>
+        {/* <ParentComponent/> */}
+        <Counter/>
       </div>
     </userContext.Provider>
     
